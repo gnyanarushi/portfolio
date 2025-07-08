@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-start bg-gradient-to-r from-blue-800 to-black-900">
+    <section id="home" className="min-h-screen flex items-center justify-start  bg-gradient-to-bl from-blue-800 to-black-900">
       <div className="container mx-auto px-6 py-20 flex items-center min-h-screen">
         <div className="max-w-4xl animate-hero-entrance text-left">
           <h2 className="text-2xl text-gray-300 mb-2 font-medium">Hi, I am</h2>
