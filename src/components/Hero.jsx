@@ -17,9 +17,9 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">Gnyana Rushi</h1>
           <h3 className="text-lg text-gray-400 mb-8 font-medium">Full-Stack Web and Mobile App Developer</h3>
           <div className="flex space-x-6 mb-12">
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.2s' }}><span className="sr-only">Email</span><Mail size={24} className="text-gray-200" /></a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.4s' }}><span className="sr-only">GitHub</span><Github size={24} className="text-gray-200" /></a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.6s' }}><span className="sr-only">LinkedIn</span><Linkedin size={24} className="text-gray-200" /></a>
+            <a href="gnyanarushi@gmail.com" target="_blank"  className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.2s' }}><span className="sr-only">Email</span><Mail size={24} className="text-gray-200" /></a>
+            <a href="https://github.com/gnyanarushi-nandigam" target="_blank" className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.4s' }}><span className="sr-only">GitHub</span><Github size={24} className="text-gray-200" /></a>
+            <a href="https://www.linkedin.com/in/rushi-nandigam" target="_blank" className="p-3 bg-gray-800 rounded-full hover:bg-blue-800 transition-all duration-300 hover:scale-110 transform shadow-lg hover:shadow-xl animate-hero-icon" style={{ animationDelay: '0.6s' }}><span className="sr-only">LinkedIn</span><Linkedin size={24} className="text-gray-200" /></a>
           </div>
         </div>
       </div>
