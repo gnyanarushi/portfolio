@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Gnyana
+            G
           </div>
 
           <div className="hidden md:flex space-x-8">
