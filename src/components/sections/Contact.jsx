@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Globe } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: <MapPin size={20} />,
       title: 'Location',
-      value: 'Tadepalligudem , AndraPradesh',
+      value: 'Tadepalligudem, Andhra Pradesh',
       link: null
     }
   ];
@@ -49,19 +49,19 @@ const Contact = () => {
     {
       icon: <Github size={20} />,
       name: 'GitHub',
-      url: 'https://github.com/gnyana',
+      url: 'https://github.com/rushinandigam',
       color: 'hover:text-gray-900'
     },
     {
       icon: <Linkedin size={20} />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/gnyana',
+      url: 'https://www.linkedin.com/in/gnyanarushi',
       color: 'hover:text-blue-600'
     },
     {
-      icon: <Twitter size={20} />,
-      name: 'Twitter',
-      url: 'https://twitter.com/gnyana',
+      icon: <Globe size={20} />,
+      name: 'Portfolio',
+      url: 'https://gnyanarushi.tech',
       color: 'hover:text-blue-400'
     }
   ];

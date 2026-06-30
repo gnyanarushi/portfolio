@@ -25,7 +25,7 @@ const Hero = () => {
               Gnyana Rushi
             </h1>
             <h3 className="text-lg md:text-xl text-gray-400 mb-10 font-medium">
-              Full-Stack Web &amp; Mobile App Developer
+              Mobile Application Developer · Flutter &amp; FastAPI
             </h3>
 
             {/* Social Links */}
@@ -41,7 +41,7 @@ const Hero = () => {
                 <Mail size={22} className="text-gray-200" />
               </a>
               <a
-                href="https://github.com/gnyanarushi-nandigam"
+                href="https://github.com/rushinandigam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800/70 backdrop-blur rounded-full hover:bg-blue-700 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/30 animate-hero-icon"
@@ -51,7 +51,7 @@ const Hero = () => {
                 <Github size={22} className="text-gray-200" />
               </a>
               <a
-                href="https://www.linkedin.com/in/rushi-nandigam"
+                href="https://www.linkedin.com/in/gnyanarushi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800/70 backdrop-blur rounded-full hover:bg-blue-700 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-blue-500/30 animate-hero-icon"

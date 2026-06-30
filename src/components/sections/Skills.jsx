@@ -2,16 +2,20 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    'HTML',
-    'CSS',
-    'TypeScript',
-    'Java',
-    'React',
-    'Tailwind CSS',
     'Flutter',
+    'Dart',
+    'Firebase',
+    'REST APIs',
+    'FastAPI',
+    'React',
     'Node.js',
+    'PostgreSQL',
     'MongoDB',
-    'Express.js'
+    'Docker',
+    'Java',
+    'Python',
+    'JavaScript',
+    'Git'
   ];
 
   return (
@@ -51,9 +55,9 @@ const Skills = () => {
             </div>
 
             <div className="mt-8 p-6 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg border border-gray-600">
-              <h4 className="text-lg font-semibold mb-4 text-white text-center">Currently Learning</h4>
+              <h4 className="text-lg font-semibold mb-4 text-white text-center">Core Concepts</h4>
               <div className="flex flex-wrap gap-3 justify-center">
-                {['Spring Boot', 'System Design', 'Devops'].map((tech) => (
+                {['Clean Architecture', 'State Management', 'API Integration', 'Performance Optimization', 'OOP & DSA'].map((tech) => (
                   <span
                     key={tech}
                     className="px-4 py-2 bg-gray-600 text-gray-200 rounded-full text-sm border border-gray-500 hover:bg-gray-500 transition-colors duration-200"

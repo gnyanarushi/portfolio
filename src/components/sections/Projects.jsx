@@ -1,91 +1,81 @@
 import React from 'react';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { Github, Mouse, Video, Image, Sparkles, Database, ShieldCheck } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      title: 'DeployShield',
+      description: 'A deployment monitoring application that tracks and surfaces the health and status of an application\'s deployments in real time.',
+      icon: <ShieldCheck size={36} />,
+      technologies: ['TypeScript', 'Python', 'REST APIs'],
+      github: 'https://github.com/rushinandigam/deploysheild-frontend'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Vue.js', 'Socket.io', 'MongoDB', 'Express.js'],
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      title: 'Smart Content Generator',
+      description: 'An AI-assisted content generation tool that helps draft and refine written content through a clean, responsive web interface.',
+      icon: <Sparkles size={36} />,
+      technologies: ['TypeScript', 'Next.js'],
+      github: 'https://github.com/gnyanarushi/Smart-Content-Generator'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and historical weather data visualization.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Chart.js', 'OpenWeather API', 'Geolocation'],
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      title: 'CSV Query Engine',
+      description: 'A custom Python query engine that lets you run structured queries directly against CSV files, no database required.',
+      icon: <Database size={36} />,
+      technologies: ['Python'],
+      github: 'https://github.com/rushinandigam/csv_query_engine'
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and optimized performance.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-      github: 'https://github.com',
-      demo: 'https://example.com'
+      title: 'Mobile Mouse Controller',
+      description: 'A cross-platform Flutter app that turns a smartphone into a wireless mouse and keyboard using TCP, UDP and WebSocket communication.',
+      icon: <Mouse size={36} />,
+      technologies: ['Flutter', 'Dart', 'WebSocket'],
+      github: 'https://github.com/gnyanarushi/mobile-mouse-mobile-app'
     },
-    
+    {
+      title: 'Any Video Downloader',
+      description: 'A modern video downloader built with Next.js supporting URL validation, media download and a responsive UI for platforms like YouTube and Instagram.',
+      icon: <Video size={36} />,
+      technologies: ['Next.js', 'React'],
+      github: 'https://github.com/gnyanarushidev/any-video-downloader'
+    },
+    {
+      title: 'Wallpaper Application',
+      description: 'A Flutter application for browsing, downloading and applying wallpapers with a clean, intuitive mobile interface.',
+      icon: <Image size={36} />,
+      technologies: ['Flutter', 'Dart'],
+      github: 'https://github.com/gnyanarushi/WallpaperApplication'
+    }
   ];
 
   return (
     <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white">
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">
             Featured Projects
           </h2>
+          <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
+            A few things I've built outside of work — spanning mobile, web and backend.
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group border border-gray-700 animate-fadein-slideup hover:-translate-y-2"
-                style={{ animationDelay: `${index * 0.12}s` }}
+                className="bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group border border-gray-700 animate-fadein-slideup hover:-translate-y-2 flex flex-col"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                    <div className="flex space-x-3">
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                      >
-                        <Eye size={20} />
-                      </a>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                      >
-                        <Github size={20} />
-                      </a>
-                    </div>
+                <div className="relative h-40 flex items-center justify-center bg-gradient-to-br from-blue-600/20 to-purple-700/20 border-b border-gray-700">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    {project.icon}
                   </div>
                 </div>
 
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-blue-400 transition-colors duration-200">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 mb-4 line-clamp-3">
+                  <p className="text-gray-300 mb-4 line-clamp-3 flex-1">
                     {project.description}
                   </p>
 
@@ -101,15 +91,6 @@ const Projects = () => {
                   </div>
 
                   <div className="flex space-x-4">
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} />
-                      <span className="text-sm font-medium">Live Demo</span>
-                    </a>
                     <a
                       href={project.github}
                       target="_blank"

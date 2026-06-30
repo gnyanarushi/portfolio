@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ArrowUp, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, Globe, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,16 +30,16 @@ const Footer = () => {
     {
       title: 'Services',
       links: [
-        { name: 'Web Development', action: () => scrollToSection('contact') },
-        { name: 'Code Review', action: () => scrollToSection('contact') }
+        { name: 'Mobile App Development', action: () => scrollToSection('contact') },
+        { name: 'API & Backend Development', action: () => scrollToSection('contact') }
       ]
     },
     {
       title: 'Technologies',
       links: [
-        { name: 'React & Next.js', action: () => scrollToSection('skills') },
-        { name: 'Node.js & Python', action: () => scrollToSection('skills') },
-        { name: 'Mobile Development', action: () => scrollToSection('skills') }
+        { name: 'Flutter & Dart', action: () => scrollToSection('skills') },
+        { name: 'FastAPI & React', action: () => scrollToSection('skills') },
+        { name: 'Firebase & PostgreSQL', action: () => scrollToSection('skills') }
       ]
     }
   ];
@@ -48,25 +48,25 @@ const Footer = () => {
     {
       icon: <Github size={20} />,
       name: 'GitHub',
-      url: 'https://github.com/gnyana',
+      url: 'https://github.com/rushinandigam',
       color: 'hover:text-gray-900'
     },
     {
       icon: <Linkedin size={20} />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/gnyana',
+      url: 'https://www.linkedin.com/in/gnyanarushi',
       color: 'hover:text-blue-600'
     },
     {
-      icon: <Twitter size={20} />,
-      name: 'Twitter',
-      url: 'https://twitter.com/gnyana',
-      color: 'hover:text-blue-400'
+      icon: <Globe size={20} />,
+      name: 'Portfolio',
+      url: 'https://gnyanarushi.tech',
+      color: 'hover:text-purple-600'
     },
     {
       icon: <Mail size={20} />,
       name: 'Email',
-      url: 'gnyanarushi@gmail.com',
+      url: 'mailto:gnyanarushi@gmail.com',
       color: 'hover:text-purple-600'
     }
   ];
@@ -80,8 +80,8 @@ const Footer = () => {
               Gnyana
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Full-Stack Developer passionate about creating
-              innovative digital experiences that make a difference.
+              Mobile Application Developer crafting cross-platform
+              Flutter experiences and scalable backends.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -120,9 +120,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-              <span>© {currentYear} Gnyana. Made with</span>
-              <Heart size={16} className="text-red-500" />
-              <span>in Tadepalligudem</span>
+              <span>© {currentYear} Gnyana Rushi. All rights reserved.</span>
             </div>
 
             <div className="flex items-center space-x-6">

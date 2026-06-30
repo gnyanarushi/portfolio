@@ -1,49 +1,49 @@
 import React from 'react';
-import { Calendar, MapPin, Building, Award } from 'lucide-react';
+import { Calendar, MapPin, Building } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Intern',
-      company: 'Koyya Enterprises Private Limited',
+      title: 'Software Engineer',
+      company: 'KK Consultancy',
       location: 'Remote',
-      period: '2024 - Present',
+      period: 'Apr 2026 - Present',
+      type: 'Full-time',
+      description: 'Developing a multi-tenant ERP platform using FastAPI, React, PostgreSQL and Docker.',
+      achievements: [
+        'Building and integrating microservices for Admissions, Academics, Examinations and Student Management via REST APIs',
+        'Collaborating with cross-functional product and engineering teams',
+        'Participating in code reviews and Git-based version control'
+      ],
+      technologies: ['FastAPI', 'React', 'PostgreSQL', 'Docker']
+    },
+    {
+      title: 'Mobile Application Developer',
+      company: 'KK Consultancy',
+      location: 'Remote',
+      period: 'Sep 2025 - Apr 2026',
+      type: 'Full-time',
+      description: 'Developed Cittasya, a Flutter-based wellness application for Android and iOS with guided Yoga Nidra and meditation programs.',
+      achievements: [
+        'Integrated Firebase Authentication, Cloud Firestore, push notifications, reminders, progress tracking and a third-party payment gateway SDK',
+        'Optimized app performance and responsiveness, debugged issues across platforms',
+        'Contributed to code reviews using Git'
+      ],
+      technologies: ['Flutter', 'Firebase', 'Firestore', 'REST APIs']
+    },
+    {
+      title: 'Intelligent Systems Engineer Intern',
+      company: 'KEPL (Koyya Enterprise Pvt. Ltd.)',
+      location: 'Bangalore',
+      period: 'Jun 2025 - Aug 2025',
       type: 'Internship',
-      description: 'Currently working as an intern, gaining hands-on experience in mobile application development and contributing to real-world projects.',
+      description: 'Developed Flutter UI components for healthcare and Agri-Tech platforms, improving usability through collaborative, cross-functional development.',
       achievements: [
-        'Learning industry best practices and development workflows',
-        'Contributing to team projects and gaining practical experience',
-        'Developing skills in collaborative software development'
+        'Integrated REST APIs, Firebase Authentication and Cloud Firestore',
+        'Implemented push notifications, local notifications and responsive UI for Android and iOS',
+        'Participated in debugging, testing and production deployments'
       ],
-      technologies: ['Flutter', 'Bloc',  'Git']
-    },
-    {
-      title: 'Data Analyst',
-      company: 'Mainflow Technologies',
-      location: 'Remote',
-      period: '2024',
-      type: 'Virtual Internship',
-      description: 'Worked as a data analyst, learning to process and analyze data to derive meaningful insights for business decisions.',
-      achievements: [
-        'Analyzed datasets to identify trends and patterns',
-        'Created data visualizations and reports',
-        'Learned data processing and analysis techniques'
-      ],
-      technologies: [ 'Data Analysis', 'Python','Visualization']
-    },
-    {
-      title: 'Web Developer',
-      company: 'Apex Planet',
-      location: 'Remote',
-      period: '2024',
-      type: 'Virtual Internship',
-      description: 'Worked as a  web developer, creating responsive websites and learning modern web development practices.',
-      achievements: [
-        'Developed responsive websites using modern technologies',
-        'Learned client communication and project management',
-        'Gained experience in frontend development best practices'
-      ],
-      technologies: ['HTML', 'CSS', 'JavaScript']
+      technologies: ['Flutter', 'Firebase', 'REST APIs']
     }
   ];
 
@@ -124,10 +124,9 @@ const Experience = () => {
                 <h3 className="text-xl font-semibold mb-4 text-white">Education</h3>
                 <div className="space-y-3">
                   <div>
-
                     <h4 className="font-medium text-white text-sm">B.Tech Information Technology</h4>
                     <p className="text-gray-400 text-xs">SASI Institute of Technology and Engineering</p>
-                    <p className="text-blue-400 text-xs font-medium">2023 </p>
+                    <p className="text-blue-400 text-xs font-medium">2023 - Present · CGPA 8.73</p>
                   </div>
                 </div>
               </div>
@@ -137,19 +136,19 @@ const Experience = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span>Status</span>
-                    <span className="font-medium">Student</span>
+                    <span className="font-medium">Software Engineer</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Internships</span>
+                    <span>Roles Held</span>
                     <span className="font-medium">3</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Technologies</span>
-                    <span className="font-medium">6+</span>
+                    <span className="font-medium">10+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Learning Mode</span>
-                    <span className="font-medium">Active</span>
+                    <span>Experience</span>
+                    <span className="font-medium">1+ Year</span>
                   </div>
                 </div>
               </div>
