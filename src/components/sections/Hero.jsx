@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
-import profileImg from '../../assets/images/rishi.png';
+import profileImg from '../../assets/images/my_prof2.png';
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -85,12 +85,12 @@ const Hero = () => {
               <span className="absolute top-1/2 -left-6 w-3 h-3 rounded-full bg-blue-400 opacity-50" />
 
               {/* Gradient border + float animation */}
-              <div className="p-[3px] rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-blue-800 animate-float shadow-2xl shadow-blue-900/50">
-                <div className="rounded-full overflow-hidden w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-gray-900">
+              <div className="p-[5px] rounded-full bg-gradient-to-tr from-blue-400 via-purple-400 to-blue-700 animate-float shadow-2xl shadow-blue-900/50 ring-1 ring-white/20">
+                <div className="rounded-full overflow-hidden w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-gray-900 shadow-inner shadow-black/50">
                   <img
                     src={profileImg}
                     alt="Gnyana Rushi"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-top scale-105"
                   />
                 </div>
               </div>
