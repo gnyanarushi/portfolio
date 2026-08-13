@@ -32,15 +32,16 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center mb-12">
             <div className="space-y-8 text-center md:text-left">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a Mobile Application Developer building cross-platform Android and iOS apps with
-                Flutter, Firebase and REST APIs. I've shipped production healthcare and wellness apps —
-                Cittasya, Santhi and Karuna — complete with push notifications, third-party SDKs,
-                payment gateways and cloud services.
+                I'm a backend and mobile software engineer working across Java, Python, Flutter,
+                React, FastAPI, PostgreSQL and Docker. I've designed a multi-tenant ERP covering
+                Admissions, Academics, Examinations and Student Management, and shipped production
+                Android/iOS apps like Cittasya with Firebase, push notifications and payment gateways.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm currently a Software Engineer at KK Consultancy, building a multi-tenant ERP
-                platform with FastAPI, React, PostgreSQL and Docker. I care about clean architecture,
-                performance optimization and writing code that's easy for a team to review and build on.
+                Currently a Software Engineer at KK Consultancy and an Enterprise Application
+                Developer Intern at KEPL, I apply Data Structures, Algorithms and OOP to solve real
+                problems. I care about clean architecture, performance, and writing code that's easy
+                for a team to review and build on through testing and Git-based collaboration.
               </p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-purple-700 rounded-2xl p-10 text-white shadow-2xl shadow-blue-500/20 flex flex-col items-center animate-fadein-slideup" style={{ animationDelay: '0.3s' }}>
@@ -51,12 +52,20 @@ const About = () => {
                   <span className="font-medium">Software Engineer</span>
                 </div>
                 <div className="flex justify-between w-full text-lg">
+                  <span>Focus</span>
+                  <span className="font-medium">Backend &amp; Mobile</span>
+                </div>
+                <div className="flex justify-between w-full text-lg">
                   <span>Education</span>
                   <span className="font-medium">B.Tech IT, SASI</span>
                 </div>
                 <div className="flex justify-between w-full text-lg">
                   <span>CGPA</span>
                   <span className="font-medium">8.73</span>
+                </div>
+                <div className="flex justify-between w-full text-lg">
+                  <span>ERP Modules Built</span>
+                  <span className="font-medium">4</span>
                 </div>
                 <div className="flex justify-between w-full text-lg">
                   <span>Apps Shipped</span>

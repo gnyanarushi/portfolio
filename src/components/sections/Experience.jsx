@@ -4,18 +4,31 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Engineer',
+      title: 'Enterprise Application Developer Intern',
+      company: 'KEPL (Koyya Enterprises Pvt. Ltd.)',
+      location: 'Online/Remote',
+      period: 'Jul 2026 - Present',
+      type: 'Internship',
+      description: 'Assisting in feature development on mobile and Firebase platforms for enterprise application delivery.',
+      achievements: [
+        'Building features using Flutter and Firebase for enterprise application delivery',
+        'Supporting mobile app build and deployment tasks while collaborating with the engineering team'
+      ],
+      technologies: ['Flutter', 'Firebase', 'Mobile']
+    },
+    {
+      title: 'Software Engineer Intern',
       company: 'KK Consultancy',
       location: 'Remote',
-      period: 'Apr 2026 - Present',
-      type: 'Full-time',
-      description: 'Developing a multi-tenant ERP platform using FastAPI, React, PostgreSQL and Docker.',
+      period: 'Apr 2026 - Jul 2026',
+      type: 'Internship',
+      description: 'Developed RESTful APIs for a Docker-deployed multi-tenant ERP using FastAPI and PostgreSQL.',
       achievements: [
-        'Building and integrating microservices for Admissions, Academics, Examinations and Student Management via REST APIs',
-        'Collaborating with cross-functional product and engineering teams',
-        'Participating in code reviews and Git-based version control'
+        'Built RESTful APIs for Admissions, Academics, Examinations and Student Management, enabling a multi-tenant ERP with 4 modules',
+        'Automated cross-module workflows with FastAPI integrations, reducing manual data handling by 60% across ERP operations',
+        'Reviewed code with 5+ engineers using Git, maintaining 95%+ merge accuracy across 20+ pull requests'
       ],
-      technologies: ['FastAPI', 'React', 'PostgreSQL', 'Docker']
+      technologies: ['FastAPI', 'PostgreSQL', 'Docker', 'REST APIs']
     },
     {
       title: 'Mobile Application Developer',
@@ -23,27 +36,12 @@ const Experience = () => {
       location: 'Remote',
       period: 'Sep 2025 - Apr 2026',
       type: 'Full-time',
-      description: 'Developed Cittasya, a Flutter-based wellness application for Android and iOS with guided Yoga Nidra and meditation programs.',
+      description: 'Delivered Cittasya, a Flutter app for Android and iOS, contributing to 1,000+ downloads and a 4.5+ star rating.',
       achievements: [
-        'Integrated Firebase Authentication, Cloud Firestore, push notifications, reminders, progress tracking and a third-party payment gateway SDK',
-        'Optimized app performance and responsiveness, debugged issues across platforms',
-        'Contributed to code reviews using Git'
+        'Integrated Firebase Authentication, Cloud Firestore, push notifications and a payment gateway SDK',
+        'Improved user retention by 30% over 3 months through integrations and performance optimization'
       ],
       technologies: ['Flutter', 'Firebase', 'Firestore', 'REST APIs']
-    },
-    {
-      title: 'Intelligent Systems Engineer Intern',
-      company: 'KEPL (Koyya Enterprise Pvt. Ltd.)',
-      location: 'Bangalore',
-      period: 'Jun 2025 - Aug 2025',
-      type: 'Internship',
-      description: 'Developed Flutter UI components for healthcare and Agri-Tech platforms, improving usability through collaborative, cross-functional development.',
-      achievements: [
-        'Integrated REST APIs, Firebase Authentication and Cloud Firestore',
-        'Implemented push notifications, local notifications and responsive UI for Android and iOS',
-        'Participated in debugging, testing and production deployments'
-      ],
-      technologies: ['Flutter', 'Firebase', 'REST APIs']
     }
   ];
 
@@ -126,7 +124,7 @@ const Experience = () => {
                   <div>
                     <h4 className="font-medium text-white text-sm">B.Tech Information Technology</h4>
                     <p className="text-gray-400 text-xs">SASI Institute of Technology and Engineering</p>
-                    <p className="text-blue-400 text-xs font-medium">2023 - Present · CGPA 8.73</p>
+                    <p className="text-blue-400 text-xs font-medium">Aug 2023 - Jun 2027 · CGPA 8.73/10</p>
                   </div>
                 </div>
               </div>
