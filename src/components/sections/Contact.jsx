@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: <Globe size={20} />,
       name: 'Portfolio',
-      url: 'https://gnyanarushi.tech',
+      url: 'https://gnyanarushi.si',
       color: 'hover:text-blue-400'
     }
   ];

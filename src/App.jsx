@@ -12,12 +12,14 @@ function App() {
   return (
     <div className="min-h-screen bg-black animate-fadein">
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

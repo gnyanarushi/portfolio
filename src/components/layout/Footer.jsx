@@ -60,7 +60,7 @@ const Footer = () => {
     {
       icon: <Globe size={20} />,
       name: 'Portfolio',
-      url: 'https://gnyanarushi.tech',
+      url: 'https://gnyanarushi.si',
       color: 'hover:text-purple-600'
     },
     {
